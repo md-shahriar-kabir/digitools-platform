@@ -1,25 +1,25 @@
 
 
-const AvaProducts = ({ products }) => {
-    console.log(products, "products");
+const AllProducts = ({ products }) => {
+
     return (
         <div>
 
-            <div className='grid grid-cols-3 gap-8'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
                 {
                     products.map((product) => {
-                        console.log(product, "product");
+                        
                         return <div className="card bg-base-100 rounded-2xl border-3 border-gray-200 ">
                             <div className="card-body p-3">
 
                                 <div className="flex justify-end">
                                     <span
-                                        className={`badge badge-sm p-4 rounded-full ${product.tagType === "best seller"
-                                            ? "bg-[#FEF3C6] text-[#BB4D00]"
-                                            : product.tagType === "popular"
-                                                ? "bg-[#E1E7FF] text-[#4F39F6]"
-                                                : product.tagType === "new"
-                                                    ? "bg-[#DBFCE7] text-[#0A883E]"
+                                        className={`badge badge-sm p-4 rounded-full ${product.tagType === "Best Seller"
+                                            ? "bg-[#FEF3C6] font-bold text-[#BB4D00]"
+                                            : product.tagType === "Popular"
+                                                ? "bg-[#E1E7FF] font-bold text-[#4F39F6]"
+                                                : product.tagType === "New"
+                                                    ? "bg-[#DBFCE7] font-bold text-[#0A883E]"
                                                     : ""
                                             }`}
                                     >
@@ -72,4 +72,4 @@ const AvaProducts = ({ products }) => {
     );
 };
 
-export default AvaProducts;
+export default AllProducts;

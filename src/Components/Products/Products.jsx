@@ -1,14 +1,14 @@
 import React, { use } from 'react';
-import AvaProducts from '../AvaProducts/AvaProducts';
+import AllProducts from '../AllProducts/AllProducts';
 
 const Products = ({ProductsPromise}) => {
     const products = use(ProductsPromise);
 
     return (
-        <div className='max-w-[1200px] mx-auto mt-28'>
+        <div className='max-w-[1200px] px-4 mx-auto mt-28'>
             Products
 
-            <AvaProducts products={products}/>
+            <AllProducts products={products}/>
         </div>
     );
 };
