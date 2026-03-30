@@ -3,7 +3,7 @@
 const Navbar = () => {
     return (
 
-        <div className="navbar bg-base-100 shadow-sm w-full sticky top-0 z-50">
+        <div className="navbar bg-base-100 shadow-sm w-full">
 
             <div className="max-w-[1200px] mx-auto w-full flex items-center justify-between px-4">
 
@@ -39,7 +39,7 @@ const Navbar = () => {
 
                     <a className="text-lg font-medium cursor-pointer">Login</a>
 
-                    <button className="btn rounded-full text-white font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] px-6">
+                    <button className="btn rounded-full text-white font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 px-6">
                         Get Started
                     </button>
 

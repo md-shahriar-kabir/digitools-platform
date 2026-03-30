@@ -9,9 +9,9 @@ const Banner = () => {
                 <div className="space-y-6">
 
 
-                    <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium">
+                    <div className="inline-flex items-center gap-2 bg-[#E1E7FF] text-purple-600 px-4 py-2 rounded-full text-sm font-medium">
 
-                        <img src="/src/assets/Group 5.png" alt="" />
+                        <img src="/src/assets/Group 5.png" alt=""/>
 
                         New: AI-Powered Tools Available
                     </div>
@@ -23,18 +23,17 @@ const Banner = () => {
                     <p className="text-gray-500 text-lg leading-relaxed max-w-xl">
                         Access premium AI tools, design assets, templates, and productivity
                         software—all in one place. Start creating faster today.
-
                         Explore Products
                     </p>
 
 
                     <div className="flex items-center gap-4">
 
-                        <button className="px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#6C3BFF] to-[#A855F7] hover:opacity-90 transition cursor-pointer">
+                        <button className="px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition cursor-pointer">
                             Explore Products
                         </button>
 
-                        <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-purple-500 text-purple-600 font-semibold hover:bg-purple-50 transition cursor-pointer">
+                        <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-purple-500 text-purple-600 font-semibold hover:bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:text-white transition cursor-pointer">
                             ▶ Watch Demo
                         </button>
 
