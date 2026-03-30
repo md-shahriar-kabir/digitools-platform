@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes in minutes\nOptimized for ATS systems",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Custom sections"
+    ],
+    "productImg": "/src/assets/shopping-cart.png"
+  },
+  {
+    "id": 2,
+    "name": "AI Cover Letter Generator",
+    "description": "Generate personalized cover letters instantly\nPowered by AI suggestions",
+    "price": 4.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "AI writing assistant",
+      "Multiple formats",
+      "Quick customization",
+      "Download as PDF"
+    ],
+    "productImg": "/src/assets/writing_2327400 1.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Website Kit",
+    "description": "Build your personal portfolio website\nNo coding required",
+    "price": 29.99,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Responsive design",
+      "Drag & drop builder",
+      "Free hosting",
+      "Custom domain support"
+    ],
+    "productImg": "/src/assets/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Interview Prep Toolkit",
+    "description": "Practice and prepare for interviews\nReal-world questions included",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": [
+      "Mock interviews",
+      "Common Q&A",
+      "Video practice",
+      "Feedback reports"
+    ],
+    "productImg": "/src/assets/design-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "LinkedIn Optimizer",
+    "description": "Improve your LinkedIn profile visibility\nGet noticed by recruiters",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": [
+      "Profile analysis",
+      "Keyword suggestions",
+      "Headline generator",
+      "SEO tips"
+    ],
+    "productImg": "/src/assets/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Job Tracker Dashboard",
+    "description": "Track all your job applications\nStay organized and efficient",
+    "price": 19.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": [
+      "Application tracking",
+      "Status updates",
+      "Reminder alerts",
+      "Analytics dashboard"
+    ],
+    "productImg": "/src/assets/operation.png"
+  }
+]
