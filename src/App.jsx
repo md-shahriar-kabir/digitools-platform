@@ -5,6 +5,8 @@ import Rating from './Components/Rating/Rating'
 import Products from './Components/Products/Products'
 import './App.css'
 import StepSection from './Components/StepsSection/StepSection'
+import Footer from './Components/Footer/Footer'
+import WorkFlow from './Components/WorkFlow/WorkFlow'
 
 const fetchProducts = async () => {
   const res = await fetch("/data.json");
@@ -25,6 +27,8 @@ function App() {
         <Products ProductsPromise={ProductsPromise} setCount={setCount} count={count}/>
       </Suspense>
       {/* <StepSection/> */}
+      <WorkFlow></WorkFlow>
+      <Footer/>
     </>
   )
 }

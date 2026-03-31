@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
     const [isSelected, setIsSelected] = useState(false);
 
-    const handleChooseProduct = () => {
+    const handleBuyNow = () => {
         if (isSelected) return;
 
         setIsSelected(true);
@@ -13,13 +13,12 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
         setCount(prev => prev + Number(product.count));
 
         
+        toast.success(`${product.name} has been Purchased.`)
         setIsSelected(true);
         setSelectedProducts([...selectedProducts, product])
-        isSelected && toast.warning("Added")
 
 
     }
-
 
     return (
         <div className="card bg-base-100 rounded-2xl border-3 border-gray-200 ">
@@ -68,7 +67,7 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
 
                 <div className="mt-4 flex justify-center">
                     <button
-                        onClick={handleChooseProduct}
+                        onClick={handleBuyNow}
                         className={`btn w-full mx-auto rounded-full text-white font-bold ${isSelected ? "bg-green-300" : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90"}`}>
                         {isSelected ? "Added to Cart!" : "Buy Now"}
                     </button>

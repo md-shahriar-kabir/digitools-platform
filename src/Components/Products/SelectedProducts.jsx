@@ -1,29 +1,32 @@
-const SelectedProduct = ({ selectedProducts }) => {
+
+import { FiShoppingCart } from 'react-icons/fi';
+import SelectedCard from "../Cards/SelectedCard"
+
+const SelectedProduct = ({ selectedProducts, setSelectedProducts, setCount, count }) => {
+
+
+    const handleRemoveBtn = (product) => {
+
+        const deleteItem = selectedProducts.filter(selectedProduct => selectedProduct.name !== product.name)
+        setSelectedProducts(deleteItem);
+
+        setCount(count - product.count);
+    }
 
     return (
         <div>
 
-            <div className='space-y-5 border-3 border-[#62738241] rounded-2xl p-6'>
-                <h3 className='font-bold text-3xl'>Your Cart</h3>
+            <div className='space-y-5 border-3 border-[#62738241] rounded-2xl p-6 mb-28'>
+                <h3 className='font-bold text-3xl text-left'>Your Cart</h3>
                 {
-                    selectedProducts.map((product, ind) => {
-                        return <div key={ind} className='flex  gap-6 justify-between p-10 rounded-2xl border bg-[#e6e9ee60]'>
-                            <div className='flex items-center gap-6'>
-                                <div className='border border-[#62738241] rounded-full p-3.5 bg-white'>
-                                    <img className="h-12 w-12 " src={product.productImg
-                                    } alt="icon" />
-                                </div>
-                                <div>
-                                    <h2 className='flex  gap-2 font-semibold text-xl'>{product.name}</h2>
-                                    <p className='text-[#627382] font-medium'>${product.price}</p>
-                                </div>
-                            </div>
-                            <button className='font-bold text-[#FF3980] cursor-pointer hover:bg-amber-100 rounded-sm px-3 py-1'>
-                                Remove
-                            </button>
-
+                    selectedProducts.length === 0 ?
+                        <div className='h-[350px] flex items-center justify-center flex-col gap-4'>
+                            <FiShoppingCart size={100} className='text-[#62738273]' />
+                            <p className='text-[#627382] font-medium'>Your Cart is Empty</p>
                         </div>
-                    })
+                        : selectedProducts.map((product, id) => {
+                            return <SelectedCard key={id} product={product} handleRemoveBtn={handleRemoveBtn} />
+                        })
                 }
             </div>
 
