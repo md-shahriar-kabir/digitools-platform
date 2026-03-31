@@ -1,9 +1,10 @@
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import NavBar from './Components/Navbar/NavBar'
 import Banner from './Components/Banner/Banner'
 import Rating from './Components/Rating/Rating'
 import Products from './Components/Products/Products'
 import './App.css'
+import StepSection from './Components/StepsSection/StepSection'
 
 const fetchProducts = async () => {
   const res = await fetch("/data.json");
@@ -12,16 +13,18 @@ const fetchProducts = async () => {
 
 function App() {
   const ProductsPromise = fetchProducts();
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <NavBar />
+      <NavBar count = {count} />
       <Banner />
       <Rating />
-      <Suspense fallback={<span className="loading loading-dots loading-xl"></span>
+       <Suspense fallback={<span className="loading loading-dots loading-xl"></span>
       }>
-        <Products ProductsPromise={ProductsPromise} />
+        <Products ProductsPromise={ProductsPromise} setCount={setCount} count={count}/>
       </Suspense>
+      {/* <StepSection/> */}
     </>
   )
 }
