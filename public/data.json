@@ -13,7 +13,7 @@
       "Reminders",
       "Team collaboration"
     ],
-    "productImg": "../src/assets/writing_2327400 1.png"
+    "productImg": "./writing_2327400 1.png"
   },
   {
     "id": 2,
@@ -29,7 +29,7 @@
       "Site audit",
       "Competitor tracking"
     ],
-    "productImg": "../src/assets/seo-icon.png"
+    "productImg": "./seo-icon.png"
   },
   {
     "id": 3,
@@ -45,7 +45,7 @@
       "Automation workflows",
       "Open rate tracking"
     ],
-    "productImg": "../src/assets/portfolio.png"
+    "productImg": "./portfolio.png"
   },
   {
     "id": 4,
@@ -61,7 +61,7 @@
       "Pre-made layouts",
       "Feedback reports"
     ],
-    "productImg": "../src/assets/design-tool.png"
+    "productImg": "./design-tool.png"
   },
   {
     "id": 5,
@@ -77,7 +77,7 @@
       "Quizzes & certificates",
       "SEO tips"
     ],
-    "productImg": "../src/assets/social-media.png"
+    "productImg": "./social-media.png"
   },
   {
     "id": 6,
@@ -93,6 +93,6 @@
       "Auto layout ready",
       "Easy deployment"
     ],
-    "productImg": "../src/assets/operation.png"
+    "productImg": "./operation.png"
   }
 ]
