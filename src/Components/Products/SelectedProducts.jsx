@@ -5,36 +5,26 @@ import { toast } from 'react-toastify';
 
 const SelectedProduct = ({ selectedProducts, setSelectedProducts, setCount }) => {
 
-
     const handleRemoveBtn = (product) => {
-
         const deleteItem = selectedProducts.filter(selectedProduct => selectedProduct.name !== product.name);
         setSelectedProducts(deleteItem);
-
-
         const removeCount = Number(product.count || 1);
         setCount(prev => Math.max(0, Number(prev || 0) - removeCount));
-
-
         toast.error(`${product.name} removed from cart`);
 
     };
 
-
     const totalPrice = selectedProducts.reduce((sum, product) => {
-        return sum + Number(product.price || 0);
+        return sum + Number(product.price || 0)
     }, 0);
+    const fixedTotalPrice = totalPrice.toFixed(2);
 
     const handleProceedToCheckout = () => {
         if (selectedProducts.length === 0) return;
-
         toast.success("Product Purchased successfully!");
-        
-
         setSelectedProducts([]);
         setCount(0);
     };
-
 
     return (
 
@@ -66,7 +56,7 @@ const SelectedProduct = ({ selectedProducts, setSelectedProducts, setCount }) =>
                                     Total
                                 </div>
                                 <div className="text-2xl font-bold">
-                                    ${totalPrice}
+                                    ${fixedTotalPrice}
                                 </div>
                             </div>
 
