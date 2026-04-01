@@ -5,6 +5,7 @@ import Rating from './Components/Rating/Rating'
 import Products from './Components/Products/Products'
 import './App.css'
 import StepSection from './Components/StepsSection/StepSection'
+import Pricing from './Components/Pricing/Pricing'
 import Footer from './Components/Footer/Footer'
 import WorkFlow from './Components/WorkFlow/WorkFlow'
 
@@ -26,8 +27,9 @@ function App() {
       }>
         <Products ProductsPromise={ProductsPromise} setCount={setCount} count={count}/>
       </Suspense>
-      {/* <StepSection/> */}
-      <WorkFlow></WorkFlow>
+      <StepSection/>
+      <Pricing/>
+      <WorkFlow/>
       <Footer/>
     </>
   )
