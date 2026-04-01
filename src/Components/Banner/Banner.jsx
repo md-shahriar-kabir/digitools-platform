@@ -1,4 +1,4 @@
-
+import bannerimg from "../../assets/banner.png"
 
 const Banner = () => {
     return (
@@ -43,9 +43,9 @@ const Banner = () => {
 
                 <div className="flex justify-center">
                     <img
-                        src="/src/assets/banner.png"
+                        src={bannerimg}
                         alt="banner"
-                        className="w-full max-w-md lg:max-w-lg rounded-2xl object-cover"
+                        className="w-full max-w-md lg:max-w-lg rounded-2xl pt-15 object-cover"
                     />
                 </div>
 
