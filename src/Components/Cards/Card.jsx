@@ -5,13 +5,16 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
     const [isSelected, setIsSelected] = useState(false);
 
     const handleBuyNow = () => {
-        if (isSelected) return;
         setIsSelected(true);
+        const exists = selectedProducts.find(p => p.name === product.name);
 
+        if (exists) {
+            toast.error("Product already added!");
+            return;
+        }
+        
         setCount(prev => prev + 1);
-
         toast.success(`${product.name} Added to Cart Successfully.`)
-        setIsSelected(true);
         setSelectedProducts([...selectedProducts, product])
 
     }

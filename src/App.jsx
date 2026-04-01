@@ -15,7 +15,7 @@ const fetchProducts = async () => {
 }
 
 function App() {
-  const ProductsPromise = fetchProducts();
+  const [ProductsPromise] = useState(() => fetchProducts());
   const [count, setCount] = useState(0);
 
   return (
@@ -35,4 +35,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

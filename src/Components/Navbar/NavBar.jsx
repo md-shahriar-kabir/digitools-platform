@@ -4,7 +4,7 @@ import { FiShoppingCart } from "react-icons/fi";
 const Navbar = ({ count }) => {
     return (
 
-        <div className="navbar bg-base-100 shadow-sm w-full">
+        <div className="navbar bg-base-100 fixed top-0 right-0 left-0 z-50 shadow-sm w-full">
 
             <div className="max-w-[1200px] mx-auto w-full flex items-center justify-between px-4">
 
