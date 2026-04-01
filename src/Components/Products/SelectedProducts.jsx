@@ -36,8 +36,6 @@ const SelectedProduct = ({ selectedProducts, setSelectedProducts, setCount }) =>
     };
 
 
-
-
     return (
 
         <div className='space-y-5 border-3 border-[#62738241] rounded-2xl p-6 mb-28'>

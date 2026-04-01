@@ -7,9 +7,8 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
     const handleBuyNow = () => {
         if (isSelected) return;
         setIsSelected(true);
-       
-        const num = Number(product.count)
-        setCount(prev => prev + num);
+
+        setCount(prev => prev + 1);
 
         toast.success(`${product.name} Added to Cart Successfully.`)
         setIsSelected(true);
@@ -65,9 +64,13 @@ const Card = ({ product, setCount, selectedProducts, setSelectedProducts }) => {
                 <div className="mt-4 flex justify-center">
                     <button
                         onClick={handleBuyNow}
-                        className={`btn w-full mx-auto rounded-full text-white font-bold ${isSelected ? "bg-green-500" : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90"}`}>
-                            
-                        {isSelected ? "Added to Cart!" : "Buy Now"}
+                        className={`btn w-full h-14 mx-auto rounded-full text-white font-bold transition-all duration-300 
+                            ${isSelected
+                                ? "bg-green-500"
+                                : "bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90"
+                            }`}
+                    >
+                        {isSelected ? "Added ✓" : "Buy Now"}
                     </button>
                 </div>
 
