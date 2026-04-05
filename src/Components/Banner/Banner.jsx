@@ -1,4 +1,5 @@
 import bannerimg from "../../assets/banner.png"
+import bannerIcon from '../../assets/Group 5.png';
 
 const Banner = () => {
     return (
@@ -11,7 +12,7 @@ const Banner = () => {
 
                     <div className="inline-flex items-center gap-2 bg-[#E1E7FF] text-purple-600 px-4 py-2 rounded-full text-sm font-medium">
 
-                        <img src="/src/assets/Group 5.png" alt=""/>
+                        <img src={bannerIcon} alt="icon"/>
 
                         New: AI-Powered Tools Available
                     </div>
