@@ -12,7 +12,7 @@ const Banner = () => {
 
                     <div className="inline-flex items-center gap-2 bg-[#E1E7FF] text-purple-600 px-4 py-2 rounded-full text-sm font-medium">
 
-                        <img src={bannerIcon} alt="icon"/>
+                        <img src={bannerIcon} alt="icon" />
 
                         New: AI-Powered Tools Available
                     </div>
@@ -28,13 +28,13 @@ const Banner = () => {
                     </p>
 
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex flex-col sm:flex-row items-center gap-4">
 
-                        <button className="px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition cursor-pointer">
+                        <button className="w-full sm:w-auto px-6 py-3 rounded-full text-white font-semibold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 transition cursor-pointer">
                             Explore Products
                         </button>
 
-                        <button className="flex items-center gap-2 px-6 py-3 rounded-full border border-purple-500 text-purple-600 font-semibold hover:bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:text-white transition cursor-pointer">
+                        <button className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-purple-500 text-purple-600 font-semibold hover:bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:text-white transition cursor-pointer">
                             ▶ Watch Demo
                         </button>
 

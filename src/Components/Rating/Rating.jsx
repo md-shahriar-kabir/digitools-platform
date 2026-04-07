@@ -6,7 +6,7 @@ const RatingSection = () => {
 
             <div className="max-w-[1200px] mx-auto px-30">
 
-                <div className="flex text-center text-white">
+                <div className="flex flex-col sm:flex-row text-center text-white">
 
                     <div className="space-y-2">
                         <h2 className="text-4xl md:text-5xl font-extrabold">50K+</h2>

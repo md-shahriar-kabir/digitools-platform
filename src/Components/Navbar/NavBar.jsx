@@ -40,12 +40,13 @@ const Navbar = ({ count }) => {
                             </div>
                         </div>
                     </div>
+                    <div className="flex gap-3">
+                        <a className="btn rounded-full border border-purple-500 text-purple-600 font-semibold hover:bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:text-white transition cursor-pointerr">Login</a>
 
-                    <a className="text-lg font-medium cursor-pointer">Login</a>
-
-                    <button className="btn rounded-full text-white font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 px-6">
-                        Get Started
-                    </button>
+                        <button className="btn rounded-full text-white font-bold bg-gradient-to-r from-[#4F39F6] to-[#9514FA] hover:opacity-90 px-6">
+                            Get Started
+                        </button>
+                    </div>
 
                 </div>
 
